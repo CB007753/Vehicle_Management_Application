@@ -10,4 +10,9 @@ public class ApplicationController {
     public String goHome(){
         return "index";
     }
+
+    @GetMapping("/widgets")
+    public String widget(){
+        return "widgets";
+    }
 }
