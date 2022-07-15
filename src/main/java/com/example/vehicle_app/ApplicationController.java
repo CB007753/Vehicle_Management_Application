@@ -11,8 +11,8 @@ public class ApplicationController {
         return "index";
     }
 
-    @GetMapping("/_layout")
-    public String _layout(){
-        return "_layout";
+    @GetMapping("/index2")
+    public String index2(){
+        return "index2";
     }
 }
