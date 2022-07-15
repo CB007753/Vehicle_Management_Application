@@ -11,8 +11,8 @@ public class ApplicationController {
         return "index";
     }
 
-    @GetMapping("/index2")
-    public String content(){
-        return "index2";
+    @GetMapping("/hr")
+    public String hrHome(){
+        return "/hr/index";
     }
 }
