@@ -12,7 +12,7 @@ public class ApplicationController {
     }
 
     @GetMapping("/index2")
-    public String index2(){
+    public String content(){
         return "index2";
     }
 }
