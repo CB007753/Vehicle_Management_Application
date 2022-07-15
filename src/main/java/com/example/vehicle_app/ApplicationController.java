@@ -11,8 +11,8 @@ public class ApplicationController {
         return "index";
     }
 
-    @GetMapping("/widgets")
-    public String widget(){
-        return "widgets";
+    @GetMapping("/index2")
+    public String content(){
+        return "index2";
     }
 }
