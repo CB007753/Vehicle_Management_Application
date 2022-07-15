@@ -12,7 +12,32 @@ public class ApplicationController {
     }
 
     @GetMapping("/hr")
-    public String hrHome(){
+    public String hr(){
         return "/hr/index";
+    }
+
+    @GetMapping("/vehicle")
+    public String vehicle(){
+        return "/vehicle/index";
+    }
+
+    @GetMapping("/helpdesk")
+    public String helpdesk(){
+        return "/helpdesk/index";
+    }
+
+    @GetMapping("/accounts")
+    public String accounts(){
+        return "/accounts/index";
+    }
+
+    @GetMapping("/payroll")
+    public String payroll(){
+        return "/payroll/index";
+    }
+
+    @GetMapping("/parameters")
+    public String parameters(){
+        return "/parameters/index";
     }
 }
