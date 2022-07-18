@@ -36,8 +36,8 @@ public class ApplicationController {
         return "/payroll/index";
     }
 
-    @GetMapping("/parameters")
-    public String parameters(){
-        return "/parameters/index";
+    @GetMapping("/settings")
+    public String settings(){
+        return "/settings/index";
     }
 }
