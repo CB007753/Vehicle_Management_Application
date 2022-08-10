@@ -16,13 +16,13 @@ public class CountryController {
     private CountryService countryService;
 
 
-    //When the user types http://localhost:8080/countries
-    //the application will return all the records in country table from the database
-    //@ResponseBody annotation will get all the country records in a JSON format in the webpage
     @GetMapping("/countries")
-    @ResponseBody
-    public List<Country> getAll(){
-        return countryService.getAll();
+    public String getAll(){
+
+       List<Country> countries =  countryService.getAll();
+
+       return "settings/countryList";
+
     }
 
 }
