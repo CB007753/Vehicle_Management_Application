@@ -17,20 +17,20 @@
             <!--    form-->
             <form class="form-horizontal" th:action="@{/countries}" method="post">
 
-            <div class="col-lg-11">
+                <div class="col-lg-11">
 
-                <section class="panel">
-                    <header class="panel-heading">
-                        Add New Country Details
-                    </header>
-                    <div class="panel-body">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            Edit Country Details
+                        </header>
+                        <div class="panel-body">
 
 
 
                             <div class="form-group">
                                 <label class="control-label col-sm-4">Country Name</label>
                                 <div class="col-sm-6">
-                                    <input name="description" type="text" class="form-control">
+                                    <input name="description" th:value="${country.description}" type="text" class="form-control">
                                 </div>
                             </div>
 
@@ -39,7 +39,7 @@
                                 <div class="col-sm-6">
 
 
-                                    <input name="capital" class="form-control" size="16" type="text">
+                                    <input name="capital" th:value="${country.capital}" class="form-control" size="16" type="text">
 
                                 </div>
                             </div>
@@ -48,7 +48,7 @@
                                 <label class="control-label col-sm-4">Nationality</label>
                                 <div class="col-sm-6">
 
-                                    <input name="nationality" type="text" class=" form-control" />
+                                    <input name="nationality" th:value="${country.nationality}" type="text" class=" form-control" />
 
                                 </div>
                             </div>
@@ -57,7 +57,7 @@
                                 <label class="control-label col-sm-4">Country Continent</label>
 
                                 <div class="col-sm-5">
-                                    <input name="continent" type="text" class="form-control">
+                                    <input name="continent" th:value="${country.continent}" type="text" class="form-control">
                                 </div>
                             </div>
 
@@ -65,7 +65,7 @@
                                 <label class="control-label col-sm-4">Country Code</label>
 
                                 <div class="col-sm-5">
-                                    <input name="code" type="text" class="form-control">
+                                    <input name="code" th:value="${country.code}" type="text" class="form-control">
                                 </div>
                             </div>
 
@@ -73,24 +73,24 @@
 
 
 
-                    </div>
-                </section>
-
-<!--                Button-->
-                <section class="panel">
-
-                    <div class="panel-body">
-
-                        <div align="center">
-                        <button type="submit" class="btn btn-success">Save</button>
-                        <a href="/countries" class="btn btn-warning">Exit</a>
                         </div>
+                    </section>
 
-                    </div>
-                </section>
-<!--                End of Button-->
+                    <!--                Button-->
+                    <section class="panel">
 
-            </div>
+                        <div class="panel-body">
+
+                            <div align="center">
+                                <button type="submit" class="btn btn-success">Save</button>
+                                <a href="/countries" class="btn btn-warning">Exit</a>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!--                End of Button-->
+
+                </div>
 
 
             </form>

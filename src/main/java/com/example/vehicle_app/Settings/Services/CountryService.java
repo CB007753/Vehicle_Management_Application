@@ -27,4 +27,9 @@ public class CountryService {
     public void DeleteCountryByID(Integer id){
         countryRepository.deleteById(id);
     }
+
+    //getting the country details by id to display in edit page
+    public Country getCountryByID(Integer id) {
+        return countryRepository.findById(id).orElse(null);
+    }
 }
