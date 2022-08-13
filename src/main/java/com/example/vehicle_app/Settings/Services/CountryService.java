@@ -18,7 +18,7 @@ public class CountryService {
         return countryRepository.findAll();
     }
 
-    //save the new country added by the user
+    //save the new country added by the user, Also used to update selected country records
     public void saveCountry(Country country){
          countryRepository.save(country);
     }

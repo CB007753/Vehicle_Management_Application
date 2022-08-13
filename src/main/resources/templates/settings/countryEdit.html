@@ -15,7 +15,7 @@
         <div class="row">
 
             <!--    form-->
-            <form class="form-horizontal" th:action="@{/countries}" method="post">
+            <form class="form-horizontal" th:action="@{'/countries/update/'+${country.id}}" method="put">
 
                 <div class="col-lg-11">
 
