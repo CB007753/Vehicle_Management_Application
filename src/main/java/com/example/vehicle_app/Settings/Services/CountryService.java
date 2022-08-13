@@ -22,4 +22,9 @@ public class CountryService {
     public void saveCountry(Country country){
          countryRepository.save(country);
     }
+
+    //delete a country by id
+    public void DeleteCountryByID(Integer id){
+        countryRepository.deleteById(id);
+    }
 }
