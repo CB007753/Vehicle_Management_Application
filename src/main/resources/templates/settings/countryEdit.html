@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="_layout">
+
+<body>
+
+<!--Start of Content of the page-->
+<div layout:fragment="content">
+
+
+
+    <div class="container" style="width: 70%">
+
+        <div class="row">
+
+            <!--    form-->
+            <form class="form-horizontal" th:action="@{/countries}" method="post">
+
+            <div class="col-lg-11">
+
+                <section class="panel">
+                    <header class="panel-heading">
+                        Add New Country Details
+                    </header>
+                    <div class="panel-body">
+
+
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-4">Country Name</label>
+                                <div class="col-sm-6">
+                                    <input name="description" type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-4">Country Capital</label>
+                                <div class="col-sm-6">
+
+
+                                    <input name="capital" class="form-control" size="16" type="text">
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-4">Nationality</label>
+                                <div class="col-sm-6">
+
+                                    <input name="nationality" type="text" class=" form-control" />
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-4">Country Continent</label>
+
+                                <div class="col-sm-5">
+                                    <input name="continent" type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-sm-4">Country Code</label>
+
+                                <div class="col-sm-5">
+                                    <input name="code" type="text" class="form-control">
+                                </div>
+                            </div>
+
+
+
+
+
+                    </div>
+                </section>
+
+<!--                Button-->
+                <section class="panel">
+
+                    <div class="panel-body">
+
+                        <div align="center">
+                        <button type="submit" class="btn btn-success">Save</button>
+                        <a href="/countries" class="btn btn-warning">Exit</a>
+                        </div>
+
+                    </div>
+                </section>
+<!--                End of Button-->
+
+            </div>
+
+
+            </form>
+            <!--    end of form-->
+
+        </div>
+
+    </div>
+
+
+</div>
+<!--End of Content of the page-->
+
+
+</body>
+</html>

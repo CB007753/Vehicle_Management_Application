@@ -32,6 +32,11 @@ public class CountryController {
         return "/settings/countryAdd";
     }
 
+    @GetMapping("/countryEdit")
+    public String editCountry(){
+        return "/settings/countryEdit";
+    }
+
     @PostMapping("/countries")
     public String save(Country country){
         countryService.saveCountry(country);
