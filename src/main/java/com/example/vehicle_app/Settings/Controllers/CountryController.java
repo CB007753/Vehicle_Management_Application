@@ -41,6 +41,16 @@ public class CountryController {
         return "/settings/countryEdit";
     }
 
+    //display selected country details in a read only form
+    @GetMapping("/countryDetails/{id}")
+    public String getCountryDetails(@PathVariable Integer id, Model model){
+
+        Country country = countryService.getCountryByID(id);
+        model.addAttribute("country", country);
+
+        return "/settings/countryDetails";
+    }
+
     @PostMapping("/countries")
     public String save(Country country){
         countryService.saveCountry(country);
