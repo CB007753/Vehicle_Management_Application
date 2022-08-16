@@ -17,4 +17,9 @@ public class StateService {
     public List<State> getAll(){
         return stateRepository.findAll();
     }
+
+    //delete state by id
+    public void deleteStateByID(Integer id){
+        stateRepository.deleteById(id);
+    }
 }
